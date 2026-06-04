@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+dist/
+build/
+.env
+.venv/
+venv/
+
+# Logs & Temp
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Locks
+package-lock.json
+yarn.lock
