@@ -12,6 +12,19 @@
 
 `igocan-ai` `igocan-automation` `igocan-tools`
 
+## 触发提示词
+
+安装后在对话中输入以下任一关键词即可唤起本 Skill：
+
+| 类型 | 提示词示例 |
+|------|----------|
+| 标准命令 | `/igocan-marketingpitch-generator` |
+| 核心关键词 | 「生成国际站FAQ」「制作销售技巧话术」「配置国际站知识库」「生成买家常问FAQ」 |
+| 业务场景 | 「营销话术生成」「FAQ Excel 导出」「AI 知识库填充」 |
+| 自然语言 | 「帮我生成国际站买家常问的 30 个 FAQ」「给我做一份销售技巧话术 Excel 上传到 AI 知识库」 |
+
+> 触发后 Skill 会引导你提供店铺/产品/公司链接，自动抓取卖点并生成 ≥30 个全英文 FAQ + 15–20 个销售技巧，导出为 `买家常问FAQ.xlsx` 和 `销售技巧.xlsx`，可直接上传国际站 AI 知识库。
+
 ## 技术栈
 
 - Python (pandas / openpyxl)
@@ -20,7 +33,7 @@
 
 ## 快速运行
 
-1. 将 `src/SKILL.md` 安装到支持 Skill 加载的 AI Agent 平台（如 QoderWork）
+1. 将 `SKILL.md` 安装到支持 Skill 加载的 AI Agent 平台（如 QoderWork）
 2. 唤起命令：对话中输入 `/igocan-marketingpitch-generator` 或相关触发词（"生成国际站FAQ"、"制作销售技巧话术"、"配置国际站知识库"）
 3. 按引导提供店铺链接或公司信息，自动完成话术生成与 Excel 导出
 
@@ -35,12 +48,13 @@
 
 ## 目录结构
 
+```
 igocan-marketingpitch-generator/
-├── src/
-│   └── SKILL.md        # 核心 Skill 源码（安装时选此文件夹）
+├── SKILL.md            # 核心 Skill 源码（安装文件）
 ├── igocan-tags.md      # 品牌 Skill 标签清单
 ├── .gitignore          # Git 忽略文件
 └── README.md           # 项目说明（本文件）
+```
 
 ## 版权声明
 
